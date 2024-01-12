@@ -1,11 +1,8 @@
 import pandas as pd
-
-def read_dataset(file_path):
-    dataset = pd.read_csv(file_path)
-    return dataset
+from newton import  plot_M_vs_R
 def main():
     filename = "white_dwarf_data.csv"
-    dataset = read_dataset(filename)
+    plot_M_vs_R()
 
 if __name__ == '__main__':
     main()
