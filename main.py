@@ -1,8 +1,11 @@
 import pandas as pd
-from newton import  plot_M_vs_R
+
+import einstein
+import newton
 def main():
-    filename = "white_dwarf_data.csv"
-    plot_M_vs_R()
+    newton.main()
+    einstein.main()
+
 
 if __name__ == '__main__':
     main()
